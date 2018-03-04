@@ -75,6 +75,45 @@ demo = {
         md.startAnimationForLineChart(dailySalesChart);
 
 
+        /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
+
+        var dataEmailsSubscriptionChart = {
+            labels: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'],
+            series: [
+                [82, 50, 34, 68, 36]
+
+            ]
+        };
+        var optionsEmailsSubscriptionChart = {
+            axisX: {
+                showGrid: false
+            },
+            low: 0,
+            high: 100,
+            chartPadding: {
+                top: 0,
+                right: 5,
+                bottom: 0,
+                left: 0
+            }
+        };
+        var responsiveOptions = [
+            ['screen and (max-width: 640px)', {
+                seriesBarDistance: 5,
+                axisX: {
+                    labelInterpolationFnc: function(value) {
+                        return value[0];
+                    }
+                }
+            }]
+        ];
+        var emailsSubscriptionChart = Chartist.Bar('#emailsSubscriptionChart', dataEmailsSubscriptionChart, optionsEmailsSubscriptionChart, responsiveOptions);
+
+        //start animation for the Emails Subscription Chart
+        md.startAnimationForBarChart(emailsSubscriptionChart);
+
+
+
 
         /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
