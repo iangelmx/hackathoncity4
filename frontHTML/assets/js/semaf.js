@@ -1,19 +1,23 @@
 $(document).ready(function(){
-	var luz1 = 50;
+	var luz1 = Math.random();
 	var bl1 = "v";
-	var luz2 = 20;
+	var luz2 = Math.random();
 	var luz3 = 50;
 	var luz4 = 25;
-	var luz5 = 25;
+	var luz5 = Math.random();
 	var luz6 = 60;
 	var bl2 = "v";
 	var bl3 = "v";
 	var bl4 = "v";
 	var bl5 = "v";
 	var bl6 = "v";
+	luz1 = parseInt(10*luz1+1);
+	luz2 = luz1;
+	luz5 = parseInt(10*luz5+1);
+	luz4 = luz5;
 
 
-	var pausas=300;
+	var pausas=1000;
 
 	setInterval(function(){
 		$("#ts1").html(luz1);
