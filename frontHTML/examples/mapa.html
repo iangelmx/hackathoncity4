@@ -27,7 +27,10 @@
           center: {lat: 19.442800, lng: -99.154520},
           zoom: 13
         });
+        var trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(map);
       }
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXKSSFhwd0q_cB6UXFDFd_MDt3oSChtck&callback=initMap"
     async defer></script>
