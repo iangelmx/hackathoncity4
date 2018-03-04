@@ -31,7 +31,7 @@ demo = {
                 tension: 0
             }),
             low: 0,
-            high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+            high: 40, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
             chartPadding: {
                 top: 0,
                 right: 0,
@@ -50,9 +50,9 @@ demo = {
         /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
         dataDailySalesChart = {
-            labels: ['05:00', '06:00', '07:00', '07:20', '08:00', '08:40', '09:00','10:00','12:00','13:00','16:20','17:20','18:00','18:20','19:00','20:20','21:20','22:40','00:00'],
+            labels: ['05:00', '06:00', '07:00', '07:20', '08:00', '08:40', '09:00','10:00','12:00','19:00','20:20','21:20','22:40','00:00'],
             series: [
-                [10, 14, 18, 20, 24, 28, 26, 22, 20, 20, 20, 20, 20, 20, 22, 15, 15, 10, 10]
+                [10, 14, 18, 20, 24, 28, 26, 22, 20, 22, 15, 15, 10, 10]
             ]
         };
 
@@ -61,7 +61,7 @@ demo = {
                 tension: 0
             }),
             low: 0,
-            high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+            high: 40, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
             chartPadding: {
                 top: 0,
                 right: 0,
@@ -118,9 +118,9 @@ demo = {
         /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
         dataCompletedTasksChart = {
-            labels: ['12am', '3pm', '6pm', '9pm', '12pm', '3am', '6am', '9am'],
+            labels: ['05:00', '06:00', '07:00', '08:40', '10:00', '13:00', '17:20', '18:00','18:20','20:20','21:20','22:40','00:00'],
             series: [
-                [230, 750, 450, 300, 280, 240, 200, 190]
+                [6,14,16,18,20,22,24,26,28,26,20,15,12]
             ]
         };
 
@@ -129,7 +129,7 @@ demo = {
                 tension: 0
             }),
             low: 0,
-            high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+            high: 40, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
             chartPadding: {
                 top: 0,
                 right: 0,
