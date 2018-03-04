@@ -17,6 +17,10 @@
     }
 }
 
+#barraside{
+    background-color: #312F2C;
+}
+
 #map {
     position: relative;
     width: 100%;
