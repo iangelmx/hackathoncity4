@@ -20,7 +20,7 @@ demo = {
         /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
 
         dataDailySalesChart = {
-            labels: ['WW', 'T', 'W', 'T', 'F', 'S', 'S'],
+            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
             series: [
                 [12, 17, 7, 17, 23, 18, 38]
             ]
@@ -50,9 +50,9 @@ demo = {
         /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
         dataDailySalesChart = {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+            labels: ['05:00', '06:00', '07:00', '07:20', '08:00', '08:40', '09:00','10:00','12:00','13:00','16:20','17:20','18:00','18:20','19:00','20:20','21:20','22:40','00:00'],
             series: [
-                [12, 17, 7, 17, 23, 18, 38]
+                [10, 14, 18, 20, 24, 28, 26, 22, 20, 20, 20, 20, 20, 20, 22, 15, 15, 10, 10]
             ]
         };
 
@@ -105,42 +105,6 @@ demo = {
         md.startAnimationForLineChart(completedTasksChart);
 
 
-        /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
-
-        var dataEmailsSubscriptionChart = {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            series: [
-                [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
-
-            ]
-        };
-        var optionsEmailsSubscriptionChart = {
-            axisX: {
-                showGrid: false
-            },
-            low: 0,
-            high: 1000,
-            chartPadding: {
-                top: 0,
-                right: 5,
-                bottom: 0,
-                left: 0
-            }
-        };
-        var responsiveOptions = [
-            ['screen and (max-width: 640px)', {
-                seriesBarDistance: 5,
-                axisX: {
-                    labelInterpolationFnc: function(value) {
-                        return value[0];
-                    }
-                }
-            }]
-        ];
-        var emailsSubscriptionChart = Chartist.Bar('#emailsSubscriptionChart', dataEmailsSubscriptionChart, optionsEmailsSubscriptionChart, responsiveOptions);
-
-        //start animation for the Emails Subscription Chart
-        md.startAnimationForBarChart(emailsSubscriptionChart);
 
     },
 
